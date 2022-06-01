@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Raleway&display=swap');
-@import url("https://use.fontawesome.com/releases/v5.10.0/css/all.css");body{
+@import url("https://use.fontawesome.com/releases/v5.10.0/css/all.css");
+body{
     margin:0;
     font-family: 'Raleway', sans-serif;
 }
@@ -9,7 +10,7 @@
     box-sizing: border-box;
 }
 main{
-    padding:20px;
+    padding:20px 20px 0 20px;
 }
 .template{
     background:rgb(239, 239, 239);
@@ -130,15 +131,81 @@ main{
     margin-right: 50px;
 }
 .images-image{
-    max-width:500px;
 }
 .images-image img{
-    width: 100%;
-    height: 100%;
+    max-width:300px;
+    max-height:500px;
+    object-fit:content;
 }
 .images{
     background:rgb(239, 239, 239);
     margin-top:20px;
     padding:50px;
-    display:flex;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+}
+.images .img-absolute img {
+    position: absolute;
+    max-width: 400px;
+    top: 20px;
+    left: 355px;
+    
+}
+.say-hello{
+    background:rgb(239, 239, 239);
+    padding:30px 90px;
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.say-hello-header{
+    text-align:center;
+}
+.say-hello-header-text{
+    font-style: italic;
+    line-height:25px;
+}
+.say-hello-header-title{
+    font-size:35px;
+    color:rgb(110, 110, 110);
+}
+.say-hello-header-title strong{
+    color: black;
+}
+.say-hello-header-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 195px;
+}
+.message{
+    flex-basis: 100%;
+    padding: 10px 10px 105px 10px;
+}
+.email,.subject,.message{
+    margin: 7px;
+}
+.email,.subject{
+    padding: 5px 70px 5px 5px;
+}
+button{
+    margin: 7px;
+    flex-basis: 100%;
+    padding: 5px;
+    color: white;
+    background: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+footer{
+    background:rgb(239, 239, 239);
+text-align: center;
+margin: 0 20px;
+padding:10px;
+color:rgb(110, 110, 110);
+
 }
